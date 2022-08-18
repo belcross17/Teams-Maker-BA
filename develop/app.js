@@ -46,6 +46,27 @@ function manager() {
     });
 };
 
+function team() {
+    inquirer.prompt([
+        {
+            type: "list",
+            name: "memberChoice",
+            message: "Which type of member would you like to add?",
+            choices: [
+                "Engineer",
+                "Intern",
+                "I don't want to add any more team members"
+            ]
+        }
+    ]).then(function(data){
+        if (data.memberChoice === "Engineer"){
+            engineer();
+        } else if (data.memberChoice === "Intern"){
+            intern();
+        } else (outputTeam());
+    });
+};
+
 function engineer() {
     inquirer.prompt([
         {
