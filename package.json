@@ -1,7 +1,22 @@
 {
+  "name": "develop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "inquirer": "^9.1.0",
-    "jest": "^28.1.3",
-    "path": "^0.12.7"
+    "inquirer": "^8.2.4",
+    "path": "^0.12.7",
+    "test": "^3.2.1"
+  },
+  "devDependencies": {
+    "jest": "^28.1.3"
   }
 }
